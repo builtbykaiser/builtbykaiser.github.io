@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bespoke software, hardware, &amp; wetware | Built By Kaiser</title>
+    <link rel="stylesheet" media="all" href="./assets/normalize.css" />
+    <style>
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: "Calibre", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      font-size: 1rem;
+    }
+
+    section {
+      clear: both;
+      height: 100%;
+    }
+
+    section.split,
+    section.split .split-primary,
+    section.split .split-secondary {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      height: 100%
+    }
+
+    section .split-primary {
+      width: 70%;
+    }
+
+    section .split-secondary {
+      width: 30%;
+    }
+
+    section.hero {
+      background-color: #ed3830;
+      background-image: radial-gradient(circle at 80% 25%, #ed3830, #ca1c15);
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 1.25;
+      color: white;
+    }
+
+    section.hero .split-primary,
+    section.hero .split-secondary {
+      min-height: 350px;
+    }
+
+    section.hero .split-primary {
+      position: relative; /* needed for inner shadow */
+      flex-direction: column;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ca1c15), to(#ed3830));
+      background-image: linear-gradient(#ca1c15, #ed3830);
+    }
+
+    section.hero .logo {
+      display: flex;
+      /* margin: 0px auto auto; */
+      /* width: 100%; */
+      max-width: 313px;
+      /* height: 100%; */
+      max-height: 112px;
+    }
+
+    section.hero h1 {
+      font-weight: 300;
+    }
+
+    section.hero ul {
+      margin: auto;
+      padding: 0;
+    }
+
+    section.hero ul li {
+      list-style-type: none;
+    }
+
+    .content {
+      margin: auto;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+    }
+
+    .inner-shadow {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      -webkit-box-shadow: inset -4px 0 8px rgba(0,0,0,0.1);
+      box-shadow: inset -4px 0 8px rgba(0,0,0,0.1);
+      pointer-events: none;
+    }
+
+    section.projects {
+      background-color: #ffffff;
+      background-image: radial-gradient(circle at 25% 25%, #ed3830, #ffffff);
+    }
+
+    section.hero .iphone {
+      display: flex;
+      position: relative;
+      width: 100%;
+      max-width: 365px;
+      margin: 40px auto auto;
+    }
+
+    </style>
+  </head>
+  <body>
+    <section class="split hero">
+      <div class="split-primary">
+        <div class="content">
+          <img src="./assets/logo.png" class="logo" />
+          <!-- <img src="./assets/iphone.png" class="iphone" /> -->
+          <div class="inner-shadow"></div>
+        </div>
+      </div>
+      <div class="split-secondary">
+        <div class="content">
+          <ul>
+            <li>Software</li>
+            <li>Hardware</li>
+            <li>Wetware</li>
+            <li>&amp; More</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="split projects">
+      <div class="split-primary">
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="split-secondary">
+        <div class="content">
+        </div>
+      </div>
+    </section> -->
+  </body>
+</html>
